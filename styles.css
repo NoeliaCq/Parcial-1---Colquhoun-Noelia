@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 16px;
+  width: 100vw;
+  height: 100vh;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow-y: hidden;
+  background-image: url(img/farmacia_fondo.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/*body::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background-color: rgba(0, 0, 0, 0.3);
+}*/
+.containerFlexRow {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+.containerFlexColumn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header {
+  background-color: #f3f5f7;
+  height: 64px;
+  color: #333333;
+}
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100vw;
+  background-color: #333333;
+  color: #f3f5f7;
+  height: 64px;
+}
+footer .socialMediaIcons {
+  width: 200px;
+  height: 50px;
+}
+.socialMediaIcons .icon {
+  font-size: 24px;
+  color: #f3f5f7;
+  cursor: pointer;
+}
+.socialMediaIcons .icon:hover {
+  transform: scale(1.5);
+}
+#loginContainer {
+  height: 507px;
+}
+.loginBox {
+  width: 400px;
+  height: 450px;
+  border-radius: 20px;
+  background-color: rgba(243, 245, 247, 0.7);
+  box-shadow: 10px 10px 13px -2px rgba(0, 0, 0, 0.71);
+  -webkit-box-shadow: 10px 10px 13px -2px rgba(0, 0, 0, 0.71);
+  -moz-box-shadow: 10px 10px 13px -2px rgba(0, 0, 0, 0.71);
+}
+.inputBox {
+  padding: 1rem;
+  margin: 1rem;
+  font-size: 1rem;
+  background-color: #d9d9d9;
+  border: 1px solid #4b4848;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+.btn {
+  width: 168px;
+  height: 48px;
+  border-radius: 6px;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  background-color: #facf02;
+  border: 1px solid #333333;
+  color: #333333;
+  cursor: pointer;
+	margin-top: 2rem;
+}
+.btn:hover {
+  box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.25);
+	font-weight: bold;
+}
+.principal {
+  justify-content: space-around;
+}
+.card {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  background-color: red;
+}
+
