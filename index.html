@@ -16,25 +16,23 @@
 
 <body>
 	<header class="header containerFlexRow">
-		<img src="img/BA.png" alt="logo BA">
+		<a href="https://www.buenosaires.gob.ar/salud" target="_blank" rel="noopener noreferrer"><img src="img/BA.png" alt="logo BA"></a>
 		<h2>Ministerio de Salud de la Ciudad Autónoma de Buenos Aires</h2>
 	</header>
-	<nav>
 
-	</nav>
 	<section class="center" id="loginContainer">
 		<div class="loginBox containerFlexColumn">
-			<form action="principal.html">
+			<form action="principal.html" name="loginForm" autocomplete="off">
 				<div class="inputs containerFlexColumn">
-					<input type="number" placeholder="DNI" class="inputBox">
-					<input type="password" placeholder="CONTRASEÑA" class="inputBox">
+					<input type="text" placeholder="DNI" name="dni" class="inputBox" required>
+					<input type="password" placeholder="CONTRASEÑA" id="password" class="inputBox" required>
 					<div>
 						<input type="checkbox" name="user" id="user">
 						<label for="user">Recordarme</label>
 					</div>
 				</div>
 				<div class="center">
-					<input type="submit" value="INGRESAR" class="btn">
+					<input type="submit" value="INGRESAR" class="btn" id="submitBtn">
 				</div>
 			</form>
 		</div>
