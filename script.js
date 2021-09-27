@@ -43,7 +43,7 @@ function showError() {
 		$passError.textContent = 'Debe introducir su contraseña.';
 		$passError.className = 'error active';
 	} else if (!regExp.test($dni.value)) {
-		$dniError.textContent = 'El valor introducido debe ser numérico.';
+		$dniError.textContent = 'El valor introducido en Usuario debe ser numérico.';
 		$dniError.className = 'error active';
 	} else if ($password.validity.tooShort) {
 		$passError.textContent = `La contraseña debe tener al menos ${$password.minLength} caracteres; ha introducido ${$password.value.length}.`;
