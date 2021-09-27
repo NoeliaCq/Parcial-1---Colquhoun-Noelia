@@ -45,6 +45,9 @@ body {
   height: 64px;
   color: #333333;
 }
+.header h2 {
+  margin: 1rem;
+}
 footer {
   position: fixed;
   bottom: 0;
@@ -68,6 +71,9 @@ footer .socialMediaIcons {
 #loginContainer {
   height: 507px;
 }
+.inputs {
+  
+}
 .loginBox {
   width: 400px;
   height: 450px;
@@ -85,7 +91,7 @@ footer .socialMediaIcons {
   border-radius: 4px;
 }
 .btn {
-  width: 168px;
+  width: 144px;
   height: 48px;
   border-radius: 6px;
   font-family: "Poppins", sans-serif;
@@ -94,7 +100,10 @@ footer .socialMediaIcons {
   border: 1px solid #333333;
   color: #333333;
   cursor: pointer;
-	margin-top: 2rem;
+	margin: 2rem 1rem 1rem 1rem;
+}
+#fakeBtn {
+  background-color: rgba(250, 207, 2, 0.25);
 }
 .btn:hover {
   box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.25);
@@ -108,11 +117,20 @@ footer .socialMediaIcons {
   display: flex;
   flex-direction: column;
 	width: 360px;
+  margin-top: 24px;
+}
+.card:hover {
+  transform: scale(1.05);
 }
 .descuento {
 	font-size: 122px;
 	font-weight: bold;
 	height: 50%;
+  display: flex;
+}
+.descuento :first-child {
+  margin-top: 2rem;
+  font-size: 24px;
 }
 .farmacia {
 	height: 50%;
@@ -121,4 +139,17 @@ footer .socialMediaIcons {
 .farmacia h3 {
 	font-size: 24px;
 }
-
+.error {
+  width : 100%;
+  padding: 0;
+  font-size: 80%;
+  color: #333333;
+  background-color: rgba(250, 207, 2, 0.5);
+  border-radius: 5px;
+}
+.error.active {
+  padding: 0.3em;
+}
+#dniUsuario {
+  font-size: 24px;
+}

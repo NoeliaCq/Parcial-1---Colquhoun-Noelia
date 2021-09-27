@@ -11,7 +11,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="styles.css">
 	<script src="https://kit.fontawesome.com/41e4d364d3.js"></script>
-	<title>PromoFarma</title>
+	<title>Descuentos Ciudad</title>
 </head>
 
 <body>
@@ -22,16 +22,21 @@
 
 	<section class="center" id="loginContainer">
 		<div class="loginBox containerFlexColumn">
-			<form action="principal.html" name="loginForm" autocomplete="off">
+			<form action="principal.html" name="loginForm" autocomplete="off" id="formulario" novalidate>
 				<div class="inputs containerFlexColumn">
-					<input type="text" placeholder="DNI" name="dni" class="inputBox" required>
-					<input type="password" placeholder="CONTRASEÑA" id="password" class="inputBox" required>
+					<input type="text" placeholder="DNI" name="dni" class="inputBox" id="dni" required>
+					<span class="error" aria-live="polite"></span>
+					<input type="password" placeholder="CONTRASEÑA" name="password" class="inputBox" id="password" minlength="4" required>
+					<span class="error" aria-live="polite"></span>
 					<div>
+						<a href="">¿Olvidaste tu contraseña?</a>
+						<br>
 						<input type="checkbox" name="user" id="user">
-						<label for="user">Recordarme</label>
+						<label for="user">Recordar usuario</label>
 					</div>
 				</div>
-				<div class="center">
+				<div class="containerFlexRow">
+					<input type="button" value="REGISTRARSE" class="btn" id="fakeBtn">
 					<input type="submit" value="INGRESAR" class="btn" id="submitBtn">
 				</div>
 			</form>

@@ -11,46 +11,58 @@
 	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="styles.css">
 	<script src="https://kit.fontawesome.com/41e4d364d3.js"></script>
-	<title>PromoFarma</title>
+	<title>Descuentos Ciudad</title>
 </head>
 
 <body>
 	<header class="header containerFlexRow">
-		<a href="https://www.buenosaires.gob.ar/salud" target="_blank" rel="noopener noreferrer"><img src="img/BA.png" alt="logo BA"></a>
-		<h2>Usuario: </h2>
-		<input type="button" value="CERRAR SESIÓN" class="btn" style="margin: 0;" onclick="location.href='index.html';">
+		<a href="https://www.buenosaires.gob.ar/salud" target="_blank" rel="noopener noreferrer"><img src="img/BA.png"
+				alt="logo BA"></a>
+		<div class="containerFlexRow">
+			<h2 id="dniUsuario"></h2>
+			<input type="button" value="CERRAR SESIÓN" class="btn" style="margin: 0;"
+				onclick="location.href='index.html';">
+		</div>
 	</header>
-	<nav>
-
-	</nav>
 	<div class="principal containerFlexRow">
 		<div class="card loginBox">
-			<div class="descuento center">
+			<div class="descuento containerFlexColumn">
+				<p>Descuento</p>
 				<p>20%</p>
 			</div>
 			<div class="farmacia containerFlexColumn">
 				<h3>FARMACIA SIMILIA</h3>
-				<p>Dirección: <br>Av. Santa Fe 2642, C1425 CABA</p>
+				<p><i class="fas fa-map-marker-alt"></i>Dirección: <br>
+					<a
+						href="https://www.google.com/maps/place/Farmacia+Similia/@-34.5940332,-58.4051242,18.94z/data=!4m13!1m7!3m6!1s0x95bcca9a9eebb2cf:0x64849a552fc44efc!2sAv.+Santa+Fe+2642,+C1425+BGO,+Buenos+Aires!3b1!8m2!3d-34.5941542!4d-58.4045238!3m4!1s0x95bcca9a9eeb67f9:0xa103d056950a3b8a!8m2!3d-34.5938842!4d-58.4043279">Av.
+						Santa Fe 2642, C1425 CABA</a>
+				</p>
 				<p>Válido hasta 05/11/2021</p>
 			</div>
 		</div>
 		<div class="card loginBox">
-			<div class="descuento center">
+			<div class="descuento containerFlexColumn">
+				<p>Descuento</p>
 				<p>10%</p>
 			</div>
 			<div class="farmacia containerFlexColumn">
 				<h3>FARMACIA RIVADAVIA</h3>
-				<p>Dirección: <br>Av. Rivadavia 2463, C1034 CABA</p>
+				<p><i class="fas fa-map-marker-alt"></i>Dirección: <br> <a
+						href="https://www.google.com/maps/place/Farmacia+Rivadavia/@-34.6096829,-58.4036367,17z/data=!4m12!1m6!3m5!1s0x95bccaeec179e7f9:0xbdade38d1f08aec1!2sFarmacia+Rivadavia!8m2!3d-34.609705!4d-58.401446!3m4!1s0x95bccaeec179e7f9:0xbdade38d1f08aec1!8m2!3d-34.609705!4d-58.401446">Av.
+						Rivadavia 2463, C1034 CABA</a></p>
 				<p>Válido hasta 16/10/2021</p>
 			</div>
 		</div>
 		<div class="card loginBox">
-			<div class="descuento center">
+			<div class="descuento containerFlexColumn">
+				<p>Descuento</p>
 				<p>15%</p>
 			</div>
 			<div class="farmacia containerFlexColumn">
 				<h3>FARMACIA DANESA</h3>
-				<p>Dirección: <br>Av. Cabildo 2171, C1428 CABA</p>
+				<p><i class="fas fa-map-marker-alt"></i>Dirección: <br> <a
+						href="https://www.google.com/maps/place/La+Danesa/@-34.5611829,-58.4573583,20.33z/data=!4m13!1m7!3m6!1s0x95bcb5d37d5af7f7:0x54cb9b6fe3c6f61f!2sAv.+Cabildo+2171,+C1428AAD+CABA!3b1!8m2!3d-34.5613148!4d-58.45709!3m4!1s0x95bcb5d37d69c8f7:0x30b75aa1b93f8042!8m2!3d-34.5612434!4d-58.4570978">Av.
+						Cabildo 2171, C1428 CABA</a></p>
 				<p>Válido hasta 01/12/2021</p>
 			</div>
 		</div>
@@ -67,11 +79,12 @@
 						class="fab fa-facebook-square"></i></a>
 				<a href="https://www.instagram.com/buenosaires/" aria-label="Instagram" class="icon"><i
 						class="fab fa-instagram-square"></i></a>
-				<a href="https://twitter.com/gcba" aria-label="Twitter" class="icon"><i class="fab fa-twitter-square"></i></a>
+				<a href="https://twitter.com/gcba" aria-label="Twitter" class="icon"><i
+						class="fab fa-twitter-square"></i></a>
 			</div>
 		</div>
 	</footer>
-	<script src="script.js"></script>
+	<script src="script2.js"></script>
 </body>
 
 </html>
